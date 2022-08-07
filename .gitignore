@@ -1,0 +1,5 @@
+/Report/browser/*
+/browser/traces/*
+/.DS_Store
+/.vscode
+/playwright-log.txt

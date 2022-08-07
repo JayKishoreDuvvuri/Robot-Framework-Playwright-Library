@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on darwin)" generated="20220807 23:06:29.060" rpa="false" schemaversion="3">
+<suite id="s1" name="CheckoutWorkflowTest" source="/Users/Jay/Desktop/RobotFramework-Playwright/Tests/CheckoutWorkflowTest.robot">
+<test id="s1-t1" name="Login as a standard user to complete the checkout workflow" line="50">
+<kw name="LoginPage.OpenApp" library="LoginPage">
+<kw name="New Browser" library="Browser">
+<arg>webkit</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20220807 23:06:29.553" level="INFO">{"browser": "webkit", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/Users/Jay/Desktop/RobotFramework-Playwright/Report/browser/traces/20f96345-604f-4353-a001-0a628b8981dc"}</msg>
+<msg timestamp="20220807 23:06:29.786" level="INFO">Successfully created browser with options: {"browser":"webkit","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/Users/Jay/Desktop/RobotFramework-Playwright/Report/browser/traces/20f96345-604f-4353-a001-0a628b8981dc"}</msg>
+<status status="PASS" starttime="20220807 23:06:29.552" endtime="20220807 23:06:29.786"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220807 23:06:30.298" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
+<msg timestamp="20220807 23:06:30.299" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220807 23:06:29.786" endtime="20220807 23:06:30.299"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:29.551" endtime="20220807 23:06:30.299"/>
+</kw>
+<kw name="LoginPage.TypeText" library="LoginPage">
+<arg>${USERNAME}</arg>
+<arg>${TEST_DATA_USERNAME}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>${TEST_DATA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:30.300" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<status status="PASS" starttime="20220807 23:06:30.300" endtime="20220807 23:06:30.446"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:30.299" endtime="20220807 23:06:30.447"/>
+</kw>
+<kw name="LoginPage.TypeText" library="LoginPage">
+<arg>${PASSWORD}</arg>
+<arg>${TEST_DATA_PASSWORD}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>${TEST_DATA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:30.448" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<status status="PASS" starttime="20220807 23:06:30.448" endtime="20220807 23:06:30.471"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:30.447" endtime="20220807 23:06:30.472"/>
+</kw>
+<kw name="LoginPage.WaitAndClick" library="LoginPage">
+<arg>${LOGIN_BUTTON}</arg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>enabled</arg>
+<arg>timeout=2s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220807 23:06:30.498" level="INFO">Waited for Element with selector data-test=login-button at state enabled</msg>
+<status status="PASS" starttime="20220807 23:06:30.472" endtime="20220807 23:06:30.498"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${LOCATOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220807 23:06:30.498" endtime="20220807 23:06:30.616"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:30.472" endtime="20220807 23:06:30.616"/>
+</kw>
+<kw name="LoginPage.WaitForPageLoad" library="LoginPage">
+<kw name="Wait Until Network Is Idle" library="Browser">
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20220807 23:06:30.617" endtime="20220807 23:06:31.147"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:30.617" endtime="20220807 23:06:31.147"/>
+</kw>
+<kw name="ProductsPage.GetTitle" library="ProductsPage">
+<arg>${TEST_DATA_PRODUCTS_PAGE_TITLE}</arg>
+<kw name="Get Title" library="Browser">
+<arg>==</arg>
+<arg>${TITLE}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20220807 23:06:31.148" endtime="20220807 23:06:31.153"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.147" endtime="20220807 23:06:31.153"/>
+</kw>
+<kw name="ProductsPage.GetUrl" library="ProductsPage">
+<arg>${TEST_DATA_PRODUCTS_PAGE_URL}</arg>
+<kw name="Get Url" library="Browser">
+<arg>==</arg>
+<arg>${URL}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20220807 23:06:31.154" endtime="20220807 23:06:31.155"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.153" endtime="20220807 23:06:31.156"/>
+</kw>
+<kw name="ProductsPage.LogoVisible" library="ProductsPage">
+<arg>${PRODUCTS_APP_LOGO}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${LOGO}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.192" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.156" endtime="20220807 23:06:31.192"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.156" endtime="20220807 23:06:31.192"/>
+</kw>
+<kw name="ProductsPage.ImageVisible" library="ProductsPage">
+<arg>${PRODUCTS_PAGE_ICON}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${IMAGE}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.223" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.193" endtime="20220807 23:06:31.223"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.192" endtime="20220807 23:06:31.223"/>
+</kw>
+<kw name="ProductsPage.BackPackImageVisible" library="ProductsPage">
+<arg>${PRODUCT_BAGPACK_IMG}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${BACKPACK_IMAGE}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.254" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.224" endtime="20220807 23:06:31.254"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.224" endtime="20220807 23:06:31.254"/>
+</kw>
+<kw name="ProductsPage.ElementEnabled" library="ProductsPage">
+<arg>${PRODUCT_BAGPACK_ADD_TO_CART_BUTTON}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>validate</arg>
+<arg>value | enabled</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.282" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.255" endtime="20220807 23:06:31.282"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.254" endtime="20220807 23:06:31.283"/>
+</kw>
+<kw name="ProductsPage.WaitAndClick" library="ProductsPage">
+<arg>${PRODUCT_BAGPACK_ADD_TO_CART_BUTTON}</arg>
+<kw name="Click" library="Browser">
+<arg>${LOCATOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220807 23:06:31.283" endtime="20220807 23:06:31.327"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.283" endtime="20220807 23:06:31.328"/>
+</kw>
+<kw name="ProductsPage.CartCountVisible" library="ProductsPage">
+<arg>${CART_COUNT_VISIBLE}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${COUNT}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.354" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.328" endtime="20220807 23:06:31.354"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.328" endtime="20220807 23:06:31.355"/>
+</kw>
+<kw name="ProductsPage.WaitAndClick" library="ProductsPage">
+<arg>${SHOPPING_CART_LINK}</arg>
+<kw name="Click" library="Browser">
+<arg>${LOCATOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220807 23:06:31.355" endtime="20220807 23:06:31.403"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.355" endtime="20220807 23:06:31.403"/>
+</kw>
+<kw name="YourCartPage.HeaderVisible" library="YourCartPage">
+<arg>${YOUR_CART_PAGE_TITLE}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${HEADER}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.431" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.404" endtime="20220807 23:06:31.431"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.404" endtime="20220807 23:06:31.432"/>
+</kw>
+<kw name="YourCartPage.GetUrl" library="YourCartPage">
+<arg>${TEST_DATA_YOUR_CART_PAGE_URL}</arg>
+<kw name="Get Url" library="Browser">
+<arg>==</arg>
+<arg>${URL}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20220807 23:06:31.432" endtime="20220807 23:06:31.434"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.432" endtime="20220807 23:06:31.434"/>
+</kw>
+<kw name=" YourCartPage.InventoryItemNameVisible" library="YourCartPage">
+<arg>${INVENTORY_ITEM_NAME}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${INVENTORY_ITEM}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.462" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.435" endtime="20220807 23:06:31.462"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.434" endtime="20220807 23:06:31.462"/>
+</kw>
+<kw name="YourCartPage.CheckoutButtonEnabled" library="YourCartPage">
+<arg>${CHECKOUT_BUTTON}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>validate</arg>
+<arg>value | enabled</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.488" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.463" endtime="20220807 23:06:31.488"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.463" endtime="20220807 23:06:31.488"/>
+</kw>
+<kw name="YourCartPage.ClickCheckoutButton" library="YourCartPage">
+<arg>${CHECKOUT_BUTTON}</arg>
+<kw name="Click" library="Browser">
+<arg>${LOCATOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220807 23:06:31.489" endtime="20220807 23:06:31.537"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.489" endtime="20220807 23:06:31.538"/>
+</kw>
+<kw name="CheckoutYourInformationPage.HeaderVisible" library="CheckoutYourInformationPage">
+<arg>${CHECKOUT_YOUR_INFORMATION_PAGE_TITLE}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${HEADER}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.566" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.538" endtime="20220807 23:06:31.566"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.538" endtime="20220807 23:06:31.566"/>
+</kw>
+<kw name="CheckoutYourInformationPage.GetUrl" library="CheckoutYourInformationPage">
+<arg>${TEST_DATA_CHECKOUT_YOUR_INFORMATION_PAGE_URL}</arg>
+<kw name="Get Url" library="Browser">
+<arg>==</arg>
+<arg>${URL}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20220807 23:06:31.567" endtime="20220807 23:06:31.569"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.567" endtime="20220807 23:06:31.569"/>
+</kw>
+<kw name="CheckoutYourInformationPage.TypeText" library="CheckoutYourInformationPage">
+<arg>${FIRST_NAME}</arg>
+<arg>${TEST_DATA_FIRSTNAME}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>${TEST_DATA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.570" level="INFO">Fills the text 'TEST123' in the given field.</msg>
+<status status="PASS" starttime="20220807 23:06:31.570" endtime="20220807 23:06:31.592"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.569" endtime="20220807 23:06:31.592"/>
+</kw>
+<kw name="CheckoutYourInformationPage.TypeText" library="CheckoutYourInformationPage">
+<arg>${LAST_NAME}</arg>
+<arg>${TEST_DATA_LASTNAME}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>${TEST_DATA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.593" level="INFO">Fills the text 'TEST123' in the given field.</msg>
+<status status="PASS" starttime="20220807 23:06:31.593" endtime="20220807 23:06:31.610"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.592" endtime="20220807 23:06:31.611"/>
+</kw>
+<kw name="CheckoutYourInformationPage.TypeText" library="CheckoutYourInformationPage">
+<arg>${POSTAL_CODE}</arg>
+<arg>${TEST_DATA_POSTAL_CODE}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>${TEST_DATA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.612" level="INFO">Fills the text '00989' in the given field.</msg>
+<status status="PASS" starttime="20220807 23:06:31.611" endtime="20220807 23:06:31.627"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.611" endtime="20220807 23:06:31.627"/>
+</kw>
+<kw name="CheckoutYourInformationPage.ContinueButtoNEnabled" library="CheckoutYourInformationPage">
+<arg>${CONTINUE_BUTTON}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>validate</arg>
+<arg>value | enabled</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.656" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.628" endtime="20220807 23:06:31.656"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.627" endtime="20220807 23:06:31.656"/>
+</kw>
+<kw name="CheckoutYourInformationPage.ClickContinueButton" library="CheckoutYourInformationPage">
+<arg>${CONTINUE_BUTTON}</arg>
+<kw name="Click" library="Browser">
+<arg>${LOCATOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220807 23:06:31.657" endtime="20220807 23:06:31.704"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.656" endtime="20220807 23:06:31.704"/>
+</kw>
+<kw name="ChekoutOverviewPage.HeaderVisible" library="ChekoutOverviewPage">
+<arg>${CHECKOUT_OVERVIEW_PAGE_TITLE}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${HEADER}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.735" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.705" endtime="20220807 23:06:31.735"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.705" endtime="20220807 23:06:31.735"/>
+</kw>
+<kw name="ChekoutOverviewPage.GetUrl" library="ChekoutOverviewPage">
+<arg>${CHECKOUT_OVERVIEW_PAGE_URL}</arg>
+<kw name="Get Url" library="Browser">
+<arg>==</arg>
+<arg>${URL}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20220807 23:06:31.736" endtime="20220807 23:06:31.738"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.736" endtime="20220807 23:06:31.738"/>
+</kw>
+<kw name=" ChekoutOverviewPage.InventoryItemNameVisible" library="ChekoutOverviewPage">
+<arg>${CHECKOUT_OVERVIEW_PAGE_INVENTORY_ITEM_NAME}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${INVENTORY_ITEM}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.767" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.739" endtime="20220807 23:06:31.767"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.738" endtime="20220807 23:06:31.768"/>
+</kw>
+<kw name="ChekoutOverviewPage.FinishButtonEnabled" library="ChekoutOverviewPage">
+<arg>${FINISH_BUTTON}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>validate</arg>
+<arg>value | enabled</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.793" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.768" endtime="20220807 23:06:31.793"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.768" endtime="20220807 23:06:31.793"/>
+</kw>
+<kw name="ChekoutOverviewPage.ClickFinishButton" library="ChekoutOverviewPage">
+<arg>${FINISH_BUTTON}</arg>
+<kw name="Click" library="Browser">
+<arg>${LOCATOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220807 23:06:31.794" endtime="20220807 23:06:31.841"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.793" endtime="20220807 23:06:31.841"/>
+</kw>
+<kw name="CheckoutCompletePage.HeaderVisible" library="CheckoutCompletePage">
+<arg>${CHECKOUT_COMPLETE_PAGE_TITLE}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${HEADER}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.872" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.842" endtime="20220807 23:06:31.872"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.842" endtime="20220807 23:06:31.872"/>
+</kw>
+<kw name="CheckoutCompletePage.GetUrl" library="CheckoutCompletePage">
+<arg>${CHECKOUT_COMPLETE_PAGE_URL}</arg>
+<kw name="Get Url" library="Browser">
+<arg>==</arg>
+<arg>${URL}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20220807 23:06:31.873" endtime="20220807 23:06:31.874"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.872" endtime="20220807 23:06:31.874"/>
+</kw>
+<kw name=" CheckoutCompletePage.HeaderAndMessagetextVisible" library="CheckoutCompletePage">
+<arg>${CHECKOUT_COMPLETE_PAGE_THANK_YOU_HEADER}</arg>
+<arg>${COMPLETE_TEXT_MESSAGE}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${HEADER}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.899" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.875" endtime="20220807 23:06:31.900"/>
+</kw>
+<kw name="Get Element States" library="Browser">
+<arg>${TEXT}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.923" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.900" endtime="20220807 23:06:31.923"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.874" endtime="20220807 23:06:31.923"/>
+</kw>
+<kw name="CheckoutCompletePage.PonyImagevisible" library="CheckoutCompletePage">
+<arg>${PONY_EXPRESS_IMAGE}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>validate</arg>
+<arg>value | enabled</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.947" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.924" endtime="20220807 23:06:31.947"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.923" endtime="20220807 23:06:31.947"/>
+</kw>
+<kw name="CheckoutCompletePage.BackHomeButtoNEnabled" library="CheckoutCompletePage">
+<arg>${BACK_HOME_BUTTON}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>validate</arg>
+<arg>value | enabled</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:31.978" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:31.948" endtime="20220807 23:06:31.978"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.947" endtime="20220807 23:06:31.978"/>
+</kw>
+<kw name="CheckoutCompletePage.ClickBackHomeButton" library="CheckoutCompletePage">
+<arg>${BACK_HOME_BUTTON}</arg>
+<kw name="Click" library="Browser">
+<arg>${LOCATOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220807 23:06:31.979" endtime="20220807 23:06:32.029"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:31.979" endtime="20220807 23:06:32.030"/>
+</kw>
+<kw name="ProductsPage.TitleVisible" library="ProductsPage">
+<arg>${PRODUCTS_PAGE_TITLE}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${LOGO}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:32.060" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:32.030" endtime="20220807 23:06:32.060"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:32.030" endtime="20220807 23:06:32.061"/>
+</kw>
+<kw name="ProductsPage.GetUrl" library="ProductsPage">
+<arg>${TEST_DATA_PRODUCTS_PAGE_URL}</arg>
+<kw name="Get Url" library="Browser">
+<arg>==</arg>
+<arg>${URL}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20220807 23:06:32.061" endtime="20220807 23:06:32.063"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:32.061" endtime="20220807 23:06:32.063"/>
+</kw>
+<kw name="ProductsPage.WaitAndClick" library="ProductsPage">
+<arg>${BURGER_BUTTON}</arg>
+<kw name="Click" library="Browser">
+<arg>${LOCATOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220807 23:06:32.064" endtime="20220807 23:06:32.110"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:32.063" endtime="20220807 23:06:32.110"/>
+</kw>
+<kw name="ProductsPage.WaitAndClick" library="ProductsPage">
+<arg>${LOGOUT_BUTTON}</arg>
+<kw name="Click" library="Browser">
+<arg>${LOCATOR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220807 23:06:32.111" endtime="20220807 23:06:32.673"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:32.111" endtime="20220807 23:06:32.673"/>
+</kw>
+<kw name="LoginPage.GetUrl" library="LoginPage">
+<arg>${BASE_URL}</arg>
+<kw name="Get Url" library="Browser">
+<arg>==</arg>
+<arg>${URL}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20220807 23:06:32.674" endtime="20220807 23:06:32.675"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:32.673" endtime="20220807 23:06:32.675"/>
+</kw>
+<kw name="LoginPage.ElementVisible" library="LoginPage">
+<arg>${BOT_IMAGE}</arg>
+<kw name="Get Element States" library="Browser">
+<arg>${LOCATOR}</arg>
+<arg>validate</arg>
+<arg>value | visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220807 23:06:32.700" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:06:32.676" endtime="20220807 23:06:32.700"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:32.675" endtime="20220807 23:06:32.700"/>
+</kw>
+<status status="PASS" starttime="20220807 23:06:29.549" endtime="20220807 23:06:32.700"/>
+</test>
+<doc>User completes the checkout workflow on the Saucedemo app</doc>
+<status status="PASS" starttime="20220807 23:06:29.061" endtime="20220807 23:06:32.736"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="CheckoutWorkflowTest">CheckoutWorkflowTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
