@@ -2,4 +2,4 @@
 /browser/traces/*
 /.DS_Store
 /.vscode
-/playwright-log.txt
+/Report/playwright-log.txt
