@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on darwin)" generated="20220807 23:06:29.060" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on darwin)" generated="20220807 23:12:08.566" rpa="false" schemaversion="3">
 <suite id="s1" name="CheckoutWorkflowTest" source="/Users/Jay/Desktop/RobotFramework-Playwright/Tests/CheckoutWorkflowTest.robot">
 <test id="s1-t1" name="Login as a standard user to complete the checkout workflow" line="50">
 <kw name="LoginPage.OpenApp" library="LoginPage">
@@ -9,20 +9,20 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20220807 23:06:29.553" level="INFO">{"browser": "webkit", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/Users/Jay/Desktop/RobotFramework-Playwright/Report/browser/traces/20f96345-604f-4353-a001-0a628b8981dc"}</msg>
-<msg timestamp="20220807 23:06:29.786" level="INFO">Successfully created browser with options: {"browser":"webkit","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/Users/Jay/Desktop/RobotFramework-Playwright/Report/browser/traces/20f96345-604f-4353-a001-0a628b8981dc"}</msg>
-<status status="PASS" starttime="20220807 23:06:29.552" endtime="20220807 23:06:29.786"/>
+<msg timestamp="20220807 23:12:09.060" level="INFO">{"browser": "webkit", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/Users/Jay/Desktop/RobotFramework-Playwright/Report/browser/traces/4a7cd0e5-8f85-4c01-97d5-c0379c172423"}</msg>
+<msg timestamp="20220807 23:12:09.298" level="INFO">Successfully created browser with options: {"browser":"webkit","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/Users/Jay/Desktop/RobotFramework-Playwright/Report/browser/traces/4a7cd0e5-8f85-4c01-97d5-c0379c172423"}</msg>
+<status status="PASS" starttime="20220807 23:12:09.060" endtime="20220807 23:12:09.298"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220807 23:06:30.298" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
-<msg timestamp="20220807 23:06:30.299" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220807 23:06:29.786" endtime="20220807 23:06:30.299"/>
+<msg timestamp="20220807 23:12:09.813" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
+<msg timestamp="20220807 23:12:09.813" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220807 23:12:09.298" endtime="20220807 23:12:09.814"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:29.551" endtime="20220807 23:06:30.299"/>
+<status status="PASS" starttime="20220807 23:12:09.059" endtime="20220807 23:12:09.814"/>
 </kw>
 <kw name="LoginPage.TypeText" library="LoginPage">
 <arg>${USERNAME}</arg>
@@ -33,10 +33,10 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:30.300" level="INFO">Fills the text 'standard_user' in the given field.</msg>
-<status status="PASS" starttime="20220807 23:06:30.300" endtime="20220807 23:06:30.446"/>
+<msg timestamp="20220807 23:12:09.815" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<status status="PASS" starttime="20220807 23:12:09.814" endtime="20220807 23:12:09.959"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:30.299" endtime="20220807 23:06:30.447"/>
+<status status="PASS" starttime="20220807 23:12:09.814" endtime="20220807 23:12:09.959"/>
 </kw>
 <kw name="LoginPage.TypeText" library="LoginPage">
 <arg>${PASSWORD}</arg>
@@ -47,10 +47,10 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:30.448" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
-<status status="PASS" starttime="20220807 23:06:30.448" endtime="20220807 23:06:30.471"/>
+<msg timestamp="20220807 23:12:09.961" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<status status="PASS" starttime="20220807 23:12:09.961" endtime="20220807 23:12:09.989"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:30.447" endtime="20220807 23:06:30.472"/>
+<status status="PASS" starttime="20220807 23:12:09.960" endtime="20220807 23:12:09.989"/>
 </kw>
 <kw name="LoginPage.WaitAndClick" library="LoginPage">
 <arg>${LOGIN_BUTTON}</arg>
@@ -61,26 +61,26 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220807 23:06:30.498" level="INFO">Waited for Element with selector data-test=login-button at state enabled</msg>
-<status status="PASS" starttime="20220807 23:06:30.472" endtime="20220807 23:06:30.498"/>
+<msg timestamp="20220807 23:12:10.014" level="INFO">Waited for Element with selector data-test=login-button at state enabled</msg>
+<status status="PASS" starttime="20220807 23:12:09.990" endtime="20220807 23:12:10.014"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>${LOCATOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220807 23:06:30.498" endtime="20220807 23:06:30.616"/>
+<status status="PASS" starttime="20220807 23:12:10.014" endtime="20220807 23:12:10.135"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:30.472" endtime="20220807 23:06:30.616"/>
+<status status="PASS" starttime="20220807 23:12:09.989" endtime="20220807 23:12:10.136"/>
 </kw>
 <kw name="LoginPage.WaitForPageLoad" library="LoginPage">
 <kw name="Wait Until Network Is Idle" library="Browser">
 <tag>HTTP</tag>
 <tag>Wait</tag>
 <doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
-<status status="PASS" starttime="20220807 23:06:30.617" endtime="20220807 23:06:31.147"/>
+<status status="PASS" starttime="20220807 23:12:10.136" endtime="20220807 23:12:10.684"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:30.617" endtime="20220807 23:06:31.147"/>
+<status status="PASS" starttime="20220807 23:12:10.136" endtime="20220807 23:12:10.684"/>
 </kw>
 <kw name="ProductsPage.GetTitle" library="ProductsPage">
 <arg>${TEST_DATA_PRODUCTS_PAGE_TITLE}</arg>
@@ -91,9 +91,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20220807 23:06:31.148" endtime="20220807 23:06:31.153"/>
+<status status="PASS" starttime="20220807 23:12:10.685" endtime="20220807 23:12:10.689"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.147" endtime="20220807 23:06:31.153"/>
+<status status="PASS" starttime="20220807 23:12:10.684" endtime="20220807 23:12:10.689"/>
 </kw>
 <kw name="ProductsPage.GetUrl" library="ProductsPage">
 <arg>${TEST_DATA_PRODUCTS_PAGE_URL}</arg>
@@ -104,9 +104,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20220807 23:06:31.154" endtime="20220807 23:06:31.155"/>
+<status status="PASS" starttime="20220807 23:12:10.689" endtime="20220807 23:12:10.691"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.153" endtime="20220807 23:06:31.156"/>
+<status status="PASS" starttime="20220807 23:12:10.689" endtime="20220807 23:12:10.691"/>
 </kw>
 <kw name="ProductsPage.LogoVisible" library="ProductsPage">
 <arg>${PRODUCTS_APP_LOGO}</arg>
@@ -118,10 +118,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.192" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.156" endtime="20220807 23:06:31.192"/>
+<msg timestamp="20220807 23:12:10.729" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:10.692" endtime="20220807 23:12:10.729"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.156" endtime="20220807 23:06:31.192"/>
+<status status="PASS" starttime="20220807 23:12:10.691" endtime="20220807 23:12:10.729"/>
 </kw>
 <kw name="ProductsPage.ImageVisible" library="ProductsPage">
 <arg>${PRODUCTS_PAGE_ICON}</arg>
@@ -133,10 +133,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.223" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.193" endtime="20220807 23:06:31.223"/>
+<msg timestamp="20220807 23:12:10.761" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:10.730" endtime="20220807 23:12:10.761"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.192" endtime="20220807 23:06:31.223"/>
+<status status="PASS" starttime="20220807 23:12:10.729" endtime="20220807 23:12:10.761"/>
 </kw>
 <kw name="ProductsPage.BackPackImageVisible" library="ProductsPage">
 <arg>${PRODUCT_BAGPACK_IMG}</arg>
@@ -148,10 +148,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.254" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.224" endtime="20220807 23:06:31.254"/>
+<msg timestamp="20220807 23:12:10.792" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:10.762" endtime="20220807 23:12:10.792"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.224" endtime="20220807 23:06:31.254"/>
+<status status="PASS" starttime="20220807 23:12:10.761" endtime="20220807 23:12:10.792"/>
 </kw>
 <kw name="ProductsPage.ElementEnabled" library="ProductsPage">
 <arg>${PRODUCT_BAGPACK_ADD_TO_CART_BUTTON}</arg>
@@ -163,10 +163,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.282" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.255" endtime="20220807 23:06:31.282"/>
+<msg timestamp="20220807 23:12:10.818" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:10.793" endtime="20220807 23:12:10.818"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.254" endtime="20220807 23:06:31.283"/>
+<status status="PASS" starttime="20220807 23:12:10.793" endtime="20220807 23:12:10.819"/>
 </kw>
 <kw name="ProductsPage.WaitAndClick" library="ProductsPage">
 <arg>${PRODUCT_BAGPACK_ADD_TO_CART_BUTTON}</arg>
@@ -175,9 +175,9 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220807 23:06:31.283" endtime="20220807 23:06:31.327"/>
+<status status="PASS" starttime="20220807 23:12:10.819" endtime="20220807 23:12:10.856"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.283" endtime="20220807 23:06:31.328"/>
+<status status="PASS" starttime="20220807 23:12:10.819" endtime="20220807 23:12:10.856"/>
 </kw>
 <kw name="ProductsPage.CartCountVisible" library="ProductsPage">
 <arg>${CART_COUNT_VISIBLE}</arg>
@@ -189,10 +189,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.354" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.328" endtime="20220807 23:06:31.354"/>
+<msg timestamp="20220807 23:12:10.884" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:10.857" endtime="20220807 23:12:10.885"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.328" endtime="20220807 23:06:31.355"/>
+<status status="PASS" starttime="20220807 23:12:10.857" endtime="20220807 23:12:10.885"/>
 </kw>
 <kw name="ProductsPage.WaitAndClick" library="ProductsPage">
 <arg>${SHOPPING_CART_LINK}</arg>
@@ -201,9 +201,9 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220807 23:06:31.355" endtime="20220807 23:06:31.403"/>
+<status status="PASS" starttime="20220807 23:12:10.885" endtime="20220807 23:12:10.937"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.355" endtime="20220807 23:06:31.403"/>
+<status status="PASS" starttime="20220807 23:12:10.885" endtime="20220807 23:12:10.937"/>
 </kw>
 <kw name="YourCartPage.HeaderVisible" library="YourCartPage">
 <arg>${YOUR_CART_PAGE_TITLE}</arg>
@@ -215,10 +215,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.431" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.404" endtime="20220807 23:06:31.431"/>
+<msg timestamp="20220807 23:12:10.970" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:10.938" endtime="20220807 23:12:10.971"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.404" endtime="20220807 23:06:31.432"/>
+<status status="PASS" starttime="20220807 23:12:10.937" endtime="20220807 23:12:10.971"/>
 </kw>
 <kw name="YourCartPage.GetUrl" library="YourCartPage">
 <arg>${TEST_DATA_YOUR_CART_PAGE_URL}</arg>
@@ -229,9 +229,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20220807 23:06:31.432" endtime="20220807 23:06:31.434"/>
+<status status="PASS" starttime="20220807 23:12:10.971" endtime="20220807 23:12:10.973"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.432" endtime="20220807 23:06:31.434"/>
+<status status="PASS" starttime="20220807 23:12:10.971" endtime="20220807 23:12:10.973"/>
 </kw>
 <kw name=" YourCartPage.InventoryItemNameVisible" library="YourCartPage">
 <arg>${INVENTORY_ITEM_NAME}</arg>
@@ -243,10 +243,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.462" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.435" endtime="20220807 23:06:31.462"/>
+<msg timestamp="20220807 23:12:10.998" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:10.974" endtime="20220807 23:12:10.998"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.434" endtime="20220807 23:06:31.462"/>
+<status status="PASS" starttime="20220807 23:12:10.974" endtime="20220807 23:12:10.998"/>
 </kw>
 <kw name="YourCartPage.CheckoutButtonEnabled" library="YourCartPage">
 <arg>${CHECKOUT_BUTTON}</arg>
@@ -258,10 +258,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.488" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.463" endtime="20220807 23:06:31.488"/>
+<msg timestamp="20220807 23:12:11.021" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:10.999" endtime="20220807 23:12:11.022"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.463" endtime="20220807 23:06:31.488"/>
+<status status="PASS" starttime="20220807 23:12:10.998" endtime="20220807 23:12:11.022"/>
 </kw>
 <kw name="YourCartPage.ClickCheckoutButton" library="YourCartPage">
 <arg>${CHECKOUT_BUTTON}</arg>
@@ -270,9 +270,9 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220807 23:06:31.489" endtime="20220807 23:06:31.537"/>
+<status status="PASS" starttime="20220807 23:12:11.022" endtime="20220807 23:12:11.065"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.489" endtime="20220807 23:06:31.538"/>
+<status status="PASS" starttime="20220807 23:12:11.022" endtime="20220807 23:12:11.065"/>
 </kw>
 <kw name="CheckoutYourInformationPage.HeaderVisible" library="CheckoutYourInformationPage">
 <arg>${CHECKOUT_YOUR_INFORMATION_PAGE_TITLE}</arg>
@@ -284,10 +284,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.566" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.538" endtime="20220807 23:06:31.566"/>
+<msg timestamp="20220807 23:12:11.095" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.065" endtime="20220807 23:12:11.095"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.538" endtime="20220807 23:06:31.566"/>
+<status status="PASS" starttime="20220807 23:12:11.065" endtime="20220807 23:12:11.095"/>
 </kw>
 <kw name="CheckoutYourInformationPage.GetUrl" library="CheckoutYourInformationPage">
 <arg>${TEST_DATA_CHECKOUT_YOUR_INFORMATION_PAGE_URL}</arg>
@@ -298,9 +298,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20220807 23:06:31.567" endtime="20220807 23:06:31.569"/>
+<status status="PASS" starttime="20220807 23:12:11.096" endtime="20220807 23:12:11.097"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.567" endtime="20220807 23:06:31.569"/>
+<status status="PASS" starttime="20220807 23:12:11.095" endtime="20220807 23:12:11.097"/>
 </kw>
 <kw name="CheckoutYourInformationPage.TypeText" library="CheckoutYourInformationPage">
 <arg>${FIRST_NAME}</arg>
@@ -311,10 +311,10 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.570" level="INFO">Fills the text 'TEST123' in the given field.</msg>
-<status status="PASS" starttime="20220807 23:06:31.570" endtime="20220807 23:06:31.592"/>
+<msg timestamp="20220807 23:12:11.098" level="INFO">Fills the text 'TEST123' in the given field.</msg>
+<status status="PASS" starttime="20220807 23:12:11.098" endtime="20220807 23:12:11.120"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.569" endtime="20220807 23:06:31.592"/>
+<status status="PASS" starttime="20220807 23:12:11.097" endtime="20220807 23:12:11.120"/>
 </kw>
 <kw name="CheckoutYourInformationPage.TypeText" library="CheckoutYourInformationPage">
 <arg>${LAST_NAME}</arg>
@@ -325,10 +325,10 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.593" level="INFO">Fills the text 'TEST123' in the given field.</msg>
-<status status="PASS" starttime="20220807 23:06:31.593" endtime="20220807 23:06:31.610"/>
+<msg timestamp="20220807 23:12:11.122" level="INFO">Fills the text 'TEST123' in the given field.</msg>
+<status status="PASS" starttime="20220807 23:12:11.121" endtime="20220807 23:12:11.138"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.592" endtime="20220807 23:06:31.611"/>
+<status status="PASS" starttime="20220807 23:12:11.120" endtime="20220807 23:12:11.138"/>
 </kw>
 <kw name="CheckoutYourInformationPage.TypeText" library="CheckoutYourInformationPage">
 <arg>${POSTAL_CODE}</arg>
@@ -339,10 +339,10 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.612" level="INFO">Fills the text '00989' in the given field.</msg>
-<status status="PASS" starttime="20220807 23:06:31.611" endtime="20220807 23:06:31.627"/>
+<msg timestamp="20220807 23:12:11.139" level="INFO">Fills the text '00989' in the given field.</msg>
+<status status="PASS" starttime="20220807 23:12:11.139" endtime="20220807 23:12:11.156"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.611" endtime="20220807 23:06:31.627"/>
+<status status="PASS" starttime="20220807 23:12:11.138" endtime="20220807 23:12:11.156"/>
 </kw>
 <kw name="CheckoutYourInformationPage.ContinueButtoNEnabled" library="CheckoutYourInformationPage">
 <arg>${CONTINUE_BUTTON}</arg>
@@ -354,10 +354,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.656" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.628" endtime="20220807 23:06:31.656"/>
+<msg timestamp="20220807 23:12:11.182" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.157" endtime="20220807 23:12:11.182"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.627" endtime="20220807 23:06:31.656"/>
+<status status="PASS" starttime="20220807 23:12:11.156" endtime="20220807 23:12:11.182"/>
 </kw>
 <kw name="CheckoutYourInformationPage.ClickContinueButton" library="CheckoutYourInformationPage">
 <arg>${CONTINUE_BUTTON}</arg>
@@ -366,9 +366,9 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220807 23:06:31.657" endtime="20220807 23:06:31.704"/>
+<status status="PASS" starttime="20220807 23:12:11.183" endtime="20220807 23:12:11.230"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.656" endtime="20220807 23:06:31.704"/>
+<status status="PASS" starttime="20220807 23:12:11.183" endtime="20220807 23:12:11.230"/>
 </kw>
 <kw name="ChekoutOverviewPage.HeaderVisible" library="ChekoutOverviewPage">
 <arg>${CHECKOUT_OVERVIEW_PAGE_TITLE}</arg>
@@ -380,10 +380,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.735" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.705" endtime="20220807 23:06:31.735"/>
+<msg timestamp="20220807 23:12:11.260" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.231" endtime="20220807 23:12:11.260"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.705" endtime="20220807 23:06:31.735"/>
+<status status="PASS" starttime="20220807 23:12:11.231" endtime="20220807 23:12:11.260"/>
 </kw>
 <kw name="ChekoutOverviewPage.GetUrl" library="ChekoutOverviewPage">
 <arg>${CHECKOUT_OVERVIEW_PAGE_URL}</arg>
@@ -394,9 +394,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20220807 23:06:31.736" endtime="20220807 23:06:31.738"/>
+<status status="PASS" starttime="20220807 23:12:11.261" endtime="20220807 23:12:11.262"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.736" endtime="20220807 23:06:31.738"/>
+<status status="PASS" starttime="20220807 23:12:11.260" endtime="20220807 23:12:11.263"/>
 </kw>
 <kw name=" ChekoutOverviewPage.InventoryItemNameVisible" library="ChekoutOverviewPage">
 <arg>${CHECKOUT_OVERVIEW_PAGE_INVENTORY_ITEM_NAME}</arg>
@@ -408,10 +408,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.767" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.739" endtime="20220807 23:06:31.767"/>
+<msg timestamp="20220807 23:12:11.294" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.263" endtime="20220807 23:12:11.294"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.738" endtime="20220807 23:06:31.768"/>
+<status status="PASS" starttime="20220807 23:12:11.263" endtime="20220807 23:12:11.294"/>
 </kw>
 <kw name="ChekoutOverviewPage.FinishButtonEnabled" library="ChekoutOverviewPage">
 <arg>${FINISH_BUTTON}</arg>
@@ -423,10 +423,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.793" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.768" endtime="20220807 23:06:31.793"/>
+<msg timestamp="20220807 23:12:11.319" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.295" endtime="20220807 23:12:11.319"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.768" endtime="20220807 23:06:31.793"/>
+<status status="PASS" starttime="20220807 23:12:11.294" endtime="20220807 23:12:11.319"/>
 </kw>
 <kw name="ChekoutOverviewPage.ClickFinishButton" library="ChekoutOverviewPage">
 <arg>${FINISH_BUTTON}</arg>
@@ -435,9 +435,9 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220807 23:06:31.794" endtime="20220807 23:06:31.841"/>
+<status status="PASS" starttime="20220807 23:12:11.320" endtime="20220807 23:12:11.371"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.793" endtime="20220807 23:06:31.841"/>
+<status status="PASS" starttime="20220807 23:12:11.319" endtime="20220807 23:12:11.371"/>
 </kw>
 <kw name="CheckoutCompletePage.HeaderVisible" library="CheckoutCompletePage">
 <arg>${CHECKOUT_COMPLETE_PAGE_TITLE}</arg>
@@ -449,10 +449,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.872" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.842" endtime="20220807 23:06:31.872"/>
+<msg timestamp="20220807 23:12:11.405" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.372" endtime="20220807 23:12:11.405"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.842" endtime="20220807 23:06:31.872"/>
+<status status="PASS" starttime="20220807 23:12:11.372" endtime="20220807 23:12:11.405"/>
 </kw>
 <kw name="CheckoutCompletePage.GetUrl" library="CheckoutCompletePage">
 <arg>${CHECKOUT_COMPLETE_PAGE_URL}</arg>
@@ -463,9 +463,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20220807 23:06:31.873" endtime="20220807 23:06:31.874"/>
+<status status="PASS" starttime="20220807 23:12:11.406" endtime="20220807 23:12:11.408"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.872" endtime="20220807 23:06:31.874"/>
+<status status="PASS" starttime="20220807 23:12:11.405" endtime="20220807 23:12:11.408"/>
 </kw>
 <kw name=" CheckoutCompletePage.HeaderAndMessagetextVisible" library="CheckoutCompletePage">
 <arg>${CHECKOUT_COMPLETE_PAGE_THANK_YOU_HEADER}</arg>
@@ -478,8 +478,8 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.899" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.875" endtime="20220807 23:06:31.900"/>
+<msg timestamp="20220807 23:12:11.438" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.409" endtime="20220807 23:12:11.439"/>
 </kw>
 <kw name="Get Element States" library="Browser">
 <arg>${TEXT}</arg>
@@ -489,10 +489,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.923" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.900" endtime="20220807 23:06:31.923"/>
+<msg timestamp="20220807 23:12:11.460" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.439" endtime="20220807 23:12:11.460"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.874" endtime="20220807 23:06:31.923"/>
+<status status="PASS" starttime="20220807 23:12:11.408" endtime="20220807 23:12:11.461"/>
 </kw>
 <kw name="CheckoutCompletePage.PonyImagevisible" library="CheckoutCompletePage">
 <arg>${PONY_EXPRESS_IMAGE}</arg>
@@ -504,10 +504,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.947" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.924" endtime="20220807 23:06:31.947"/>
+<msg timestamp="20220807 23:12:11.486" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.461" endtime="20220807 23:12:11.486"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.923" endtime="20220807 23:06:31.947"/>
+<status status="PASS" starttime="20220807 23:12:11.461" endtime="20220807 23:12:11.486"/>
 </kw>
 <kw name="CheckoutCompletePage.BackHomeButtoNEnabled" library="CheckoutCompletePage">
 <arg>${BACK_HOME_BUTTON}</arg>
@@ -519,10 +519,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:31.978" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:31.948" endtime="20220807 23:06:31.978"/>
+<msg timestamp="20220807 23:12:11.517" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.487" endtime="20220807 23:12:11.517"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.947" endtime="20220807 23:06:31.978"/>
+<status status="PASS" starttime="20220807 23:12:11.486" endtime="20220807 23:12:11.517"/>
 </kw>
 <kw name="CheckoutCompletePage.ClickBackHomeButton" library="CheckoutCompletePage">
 <arg>${BACK_HOME_BUTTON}</arg>
@@ -531,9 +531,9 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220807 23:06:31.979" endtime="20220807 23:06:32.029"/>
+<status status="PASS" starttime="20220807 23:12:11.518" endtime="20220807 23:12:11.575"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:31.979" endtime="20220807 23:06:32.030"/>
+<status status="PASS" starttime="20220807 23:12:11.517" endtime="20220807 23:12:11.575"/>
 </kw>
 <kw name="ProductsPage.TitleVisible" library="ProductsPage">
 <arg>${PRODUCTS_PAGE_TITLE}</arg>
@@ -545,10 +545,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:32.060" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:32.030" endtime="20220807 23:06:32.060"/>
+<msg timestamp="20220807 23:12:11.653" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:11.576" endtime="20220807 23:12:11.653"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:32.030" endtime="20220807 23:06:32.061"/>
+<status status="PASS" starttime="20220807 23:12:11.575" endtime="20220807 23:12:11.654"/>
 </kw>
 <kw name="ProductsPage.GetUrl" library="ProductsPage">
 <arg>${TEST_DATA_PRODUCTS_PAGE_URL}</arg>
@@ -559,9 +559,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20220807 23:06:32.061" endtime="20220807 23:06:32.063"/>
+<status status="PASS" starttime="20220807 23:12:11.654" endtime="20220807 23:12:11.655"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:32.061" endtime="20220807 23:06:32.063"/>
+<status status="PASS" starttime="20220807 23:12:11.654" endtime="20220807 23:12:11.655"/>
 </kw>
 <kw name="ProductsPage.WaitAndClick" library="ProductsPage">
 <arg>${BURGER_BUTTON}</arg>
@@ -570,9 +570,9 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220807 23:06:32.064" endtime="20220807 23:06:32.110"/>
+<status status="PASS" starttime="20220807 23:12:11.656" endtime="20220807 23:12:11.689"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:32.063" endtime="20220807 23:06:32.110"/>
+<status status="PASS" starttime="20220807 23:12:11.656" endtime="20220807 23:12:11.689"/>
 </kw>
 <kw name="ProductsPage.WaitAndClick" library="ProductsPage">
 <arg>${LOGOUT_BUTTON}</arg>
@@ -581,9 +581,9 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220807 23:06:32.111" endtime="20220807 23:06:32.673"/>
+<status status="PASS" starttime="20220807 23:12:11.689" endtime="20220807 23:12:12.247"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:32.111" endtime="20220807 23:06:32.673"/>
+<status status="PASS" starttime="20220807 23:12:11.689" endtime="20220807 23:12:12.247"/>
 </kw>
 <kw name="LoginPage.GetUrl" library="LoginPage">
 <arg>${BASE_URL}</arg>
@@ -594,9 +594,9 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20220807 23:06:32.674" endtime="20220807 23:06:32.675"/>
+<status status="PASS" starttime="20220807 23:12:12.248" endtime="20220807 23:12:12.249"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:32.673" endtime="20220807 23:06:32.675"/>
+<status status="PASS" starttime="20220807 23:12:12.247" endtime="20220807 23:12:12.250"/>
 </kw>
 <kw name="LoginPage.ElementVisible" library="LoginPage">
 <arg>${BOT_IMAGE}</arg>
@@ -608,15 +608,15 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220807 23:06:32.700" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220807 23:06:32.676" endtime="20220807 23:06:32.700"/>
+<msg timestamp="20220807 23:12:12.274" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220807 23:12:12.250" endtime="20220807 23:12:12.274"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:32.675" endtime="20220807 23:06:32.700"/>
+<status status="PASS" starttime="20220807 23:12:12.250" endtime="20220807 23:12:12.274"/>
 </kw>
-<status status="PASS" starttime="20220807 23:06:29.549" endtime="20220807 23:06:32.700"/>
+<status status="PASS" starttime="20220807 23:12:09.057" endtime="20220807 23:12:12.274"/>
 </test>
 <doc>User completes the checkout workflow on the Saucedemo app</doc>
-<status status="PASS" starttime="20220807 23:06:29.061" endtime="20220807 23:06:32.736"/>
+<status status="PASS" starttime="20220807 23:12:08.568" endtime="20220807 23:12:12.311"/>
 </suite>
 <statistics>
 <total>
