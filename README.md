@@ -23,7 +23,7 @@ User logs into the website. User completes the checkout workflow and logs out fr
 Testname: CheckoutWorkflowTest.robot
 ```
 
-
+ 
 #### Installation
 - Clone (OR) Download this repo as zip folder on to your local machine
 - Navigate to project's directory on terminal and run the following commands:
