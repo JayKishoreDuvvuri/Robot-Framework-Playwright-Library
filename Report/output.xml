@@ -1,106 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2024-12-17T22:42:40.044572" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on darwin)" generated="2024-12-17T23:07:39.649314" rpa="false" schemaversion="5">
 <suite id="s1" name="CheckoutWorkflowTest" source="/Users/Jay/Workspace/RobotFramework-Playwright-Library-UI/Tests/CheckoutWorkflowTest.robot">
 <test id="s1-t1" name="Login as a standard user to complete the checkout workflow" line="50">
 <kw name="LoginPage.OpenApp" owner="LoginPage">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-12-17T22:42:40.332786" level="INFO">{"browser": "webkit", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/Jay/Workspace/RobotFramework-Playwright-Library-UI/Report/browser/traces/temp/06d6025c-e542-493e-9b69-76b7be6f7a64"}</msg>
-<msg time="2024-12-17T22:42:40.419745" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js using port 53923</msg>
-<msg time="2024-12-17T22:42:40.419922" level="INFO">Node startup parameters: ['node', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js', '53923']</msg>
-<msg time="2024-12-17T22:42:42.468688" level="INFO">Successfully created browser with options: {"browser":"webkit","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/Jay/Workspace/RobotFramework-Playwright-Library-UI/Report/browser/traces/temp/06d6025c-e542-493e-9b69-76b7be6f7a64"}</msg>
+<msg time="2024-12-17T23:07:39.970031" level="INFO">{"browser": "webkit", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/Jay/Workspace/RobotFramework-Playwright-Library-UI/Report/browser/traces/temp/0b9bf717-b287-4733-8883-ae6d4d902d7c"}</msg>
+<msg time="2024-12-17T23:07:40.251644" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js using port 56348</msg>
+<msg time="2024-12-17T23:07:40.251862" level="INFO">Node startup parameters: ['node', '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js', '56348']</msg>
+<msg time="2024-12-17T23:07:42.734134" level="INFO">Successfully created browser with options: {"browser":"webkit","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/Jay/Workspace/RobotFramework-Playwright-Library-UI/Report/browser/traces/temp/0b9bf717-b287-4733-8883-ae6d4d902d7c"}</msg>
 <arg>webkit</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-12-17T22:42:40.331944" elapsed="2.137082"/>
+<status status="PASS" start="2024-12-17T23:07:39.969072" elapsed="2.765414"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2024-12-17T22:42:43.340956" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
-<msg time="2024-12-17T22:42:43.341041" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2024-12-17T23:07:44.101633" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
+<msg time="2024-12-17T23:07:44.101708" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2024-12-17T22:42:42.469588" elapsed="0.871658"/>
+<status status="PASS" start="2024-12-17T23:07:42.735103" elapsed="1.366811"/>
 </kw>
-<status status="PASS" start="2024-12-17T22:42:40.330810" elapsed="3.010640"/>
+<status status="PASS" start="2024-12-17T23:07:39.967919" elapsed="4.134175"/>
 </kw>
 <kw name="LoginPage.TypeText" owner="LoginPage">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-12-17T22:42:43.343874" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<msg time="2024-12-17T23:07:44.103703" level="INFO">Fills the text 'standard_user' in the given field.</msg>
 <arg>${LOCATOR}</arg>
 <arg>${TEST_DATA}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:43.343116" elapsed="0.076017"/>
+<status status="PASS" start="2024-12-17T23:07:44.103109" elapsed="0.089109"/>
 </kw>
 <arg>${USERNAME}</arg>
 <arg>${TEST_DATA_USERNAME}</arg>
-<status status="PASS" start="2024-12-17T22:42:43.342160" elapsed="0.077239"/>
+<status status="PASS" start="2024-12-17T23:07:44.102513" elapsed="0.089940"/>
 </kw>
 <kw name="LoginPage.TypeText" owner="LoginPage">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-12-17T22:42:43.420911" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<msg time="2024-12-17T23:07:44.194142" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
 <arg>${LOCATOR}</arg>
 <arg>${TEST_DATA}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:43.420306" elapsed="0.019009"/>
+<status status="PASS" start="2024-12-17T23:07:44.193362" elapsed="0.026753"/>
 </kw>
 <arg>${PASSWORD}</arg>
 <arg>${TEST_DATA_PASSWORD}</arg>
-<status status="PASS" start="2024-12-17T22:42:43.419834" elapsed="0.019760"/>
+<status status="PASS" start="2024-12-17T23:07:44.192878" elapsed="0.027542"/>
 </kw>
 <kw name="LoginPage.WaitAndClick" owner="LoginPage">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-12-17T22:42:43.473656" level="INFO">Waited for Element with selector data-test=login-button at state enabled</msg>
+<msg time="2024-12-17T23:07:44.249246" level="INFO">Waited for Element with selector data-test=login-button at state enabled</msg>
 <arg>${LOCATOR}</arg>
 <arg>enabled</arg>
 <arg>timeout=2s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-12-17T22:42:43.441120" elapsed="0.032779"/>
+<status status="PASS" start="2024-12-17T23:07:44.221485" elapsed="0.028094"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2024-12-17T22:42:43.475483" level="INFO">Clicks the element 'data-test=login-button'.</msg>
+<msg time="2024-12-17T23:07:44.250971" level="INFO">Clicks the element 'data-test=login-button'.</msg>
 <arg>${LOCATOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:43.474233" elapsed="0.071421"/>
+<status status="PASS" start="2024-12-17T23:07:44.250048" elapsed="0.108810"/>
 </kw>
 <arg>${LOGIN_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:43.440294" elapsed="0.105515"/>
+<status status="PASS" start="2024-12-17T23:07:44.220872" elapsed="0.138120"/>
 </kw>
 <kw name="LoginPage.WaitForPageLoad" owner="LoginPage">
 <kw name="Wait Until Network Is Idle" owner="Browser">
-<msg time="2024-12-17T22:42:43.546996" level="WARN">Keyword 'Browser.Wait Until Network Is Idle' is deprecated. Use `Wait For Load State` instead. rfbrowser transform --wait-until-network-is-idle path/to/test command automatically transforms keyword to new format.</msg>
-<msg time="2024-12-17T22:42:43.547758" level="INFO">Waiting page load to state to receive networkidle in 10000.0</msg>
-<msg time="2024-12-17T22:42:45.030126" level="INFO">Load state networkidle got in 10000</msg>
+<msg time="2024-12-17T23:07:44.359688" level="WARN">Keyword 'Browser.Wait Until Network Is Idle' is deprecated. Use `Wait For Load State` instead. rfbrowser transform --wait-until-network-is-idle path/to/test command automatically transforms keyword to new format.</msg>
+<msg time="2024-12-17T23:07:44.360173" level="INFO">Waiting page load to state to receive networkidle in 10000.0</msg>
+<msg time="2024-12-17T23:07:45.779993" level="INFO">Load state networkidle got in 10000</msg>
 <tag>HTTP</tag>
 <tag>Wait</tag>
 <doc>*DEPRECATED!!* Use `Wait For Load State` instead. rfbrowser transform --wait-until-network-is-idle path/to/test command automatically transforms keyword to new format.</doc>
-<status status="PASS" start="2024-12-17T22:42:43.546837" elapsed="1.483448"/>
+<status status="PASS" start="2024-12-17T23:07:44.359607" elapsed="1.420523"/>
 </kw>
-<status status="PASS" start="2024-12-17T22:42:43.546325" elapsed="1.484083"/>
+<status status="PASS" start="2024-12-17T23:07:44.359264" elapsed="1.420967"/>
 </kw>
 <kw name="ProductsPage.GetTitle" owner="ProductsPage">
 <kw name="Get Title" owner="Browser">
-<msg time="2024-12-17T22:42:45.036534" level="INFO">Title: 'Swag Labs'</msg>
+<msg time="2024-12-17T23:07:45.785710" level="INFO">Title: 'Swag Labs'</msg>
 <arg>==</arg>
 <arg>${TITLE}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.031150" elapsed="0.005530"/>
+<status status="PASS" start="2024-12-17T23:07:45.781019" elapsed="0.004795"/>
 </kw>
 <arg>${TEST_DATA_PRODUCTS_PAGE_TITLE}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.030709" elapsed="0.006105"/>
+<status status="PASS" start="2024-12-17T23:07:45.780592" elapsed="0.005347"/>
 </kw>
 <kw name="ProductsPage.GetUrl" owner="ProductsPage">
 <kw name="Get Url" owner="Browser">
@@ -110,14 +110,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.037636" elapsed="0.003376"/>
+<status status="PASS" start="2024-12-17T23:07:45.787058" elapsed="0.002817"/>
 </kw>
 <arg>${TEST_DATA_PRODUCTS_PAGE_URL}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.037180" elapsed="0.003977"/>
+<status status="PASS" start="2024-12-17T23:07:45.786322" elapsed="0.003667"/>
 </kw>
 <kw name="ProductsPage.LogoVisible" owner="ProductsPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.072640" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:45.865960" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${LOGO}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -125,14 +125,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.042004" elapsed="0.030757"/>
+<status status="PASS" start="2024-12-17T23:07:45.792225" elapsed="0.073832"/>
 </kw>
 <arg>${PRODUCTS_APP_LOGO}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.041491" elapsed="0.031407"/>
+<status status="PASS" start="2024-12-17T23:07:45.790425" elapsed="0.075738"/>
 </kw>
 <kw name="ProductsPage.ImageVisible" owner="ProductsPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.326756" level="INFO">States are: ['detached']</msg>
+<msg time="2024-12-17T23:07:46.119526" level="INFO">States are: ['detached']</msg>
 <arg>${IMAGE}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -140,14 +140,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.073667" elapsed="0.253182"/>
+<status status="PASS" start="2024-12-17T23:07:45.866808" elapsed="0.252809"/>
 </kw>
 <arg>${PRODUCTS_PAGE_ICON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.073213" elapsed="0.253745"/>
+<status status="PASS" start="2024-12-17T23:07:45.866438" elapsed="0.253279"/>
 </kw>
 <kw name="ProductsPage.BackPackImageVisible" owner="ProductsPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.348289" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.143070" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${BACKPACK_IMAGE}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -155,14 +155,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.327716" elapsed="0.020688"/>
+<status status="PASS" start="2024-12-17T23:07:46.120436" elapsed="0.022724"/>
 </kw>
 <arg>${PRODUCT_BAGPACK_IMG}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.327321" elapsed="0.021297"/>
+<status status="PASS" start="2024-12-17T23:07:46.120080" elapsed="0.023247"/>
 </kw>
 <kw name="ProductsPage.ElementEnabled" owner="ProductsPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.367716" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.162701" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${LOCATOR}</arg>
 <arg>validate</arg>
 <arg>value | enabled</arg>
@@ -170,26 +170,26 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.349342" elapsed="0.018491"/>
+<status status="PASS" start="2024-12-17T23:07:46.144065" elapsed="0.018773"/>
 </kw>
 <arg>${PRODUCT_BAGPACK_ADD_TO_CART_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.348918" elapsed="0.019050"/>
+<status status="PASS" start="2024-12-17T23:07:46.143706" elapsed="0.019271"/>
 </kw>
 <kw name="ProductsPage.WaitAndClick" owner="ProductsPage">
 <kw name="Click" owner="Browser">
-<msg time="2024-12-17T22:42:45.369215" level="INFO">Clicks the element 'data-test=add-to-cart-sauce-labs-backpack'.</msg>
+<msg time="2024-12-17T23:07:46.164133" level="INFO">Clicks the element 'data-test=add-to-cart-sauce-labs-backpack'.</msg>
 <arg>${LOCATOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.368686" elapsed="0.027578"/>
+<status status="PASS" start="2024-12-17T23:07:46.163732" elapsed="0.042962"/>
 </kw>
 <arg>${PRODUCT_BAGPACK_ADD_TO_CART_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.368270" elapsed="0.028241"/>
+<status status="PASS" start="2024-12-17T23:07:46.163368" elapsed="0.043438"/>
 </kw>
 <kw name="ProductsPage.CartCountVisible" owner="ProductsPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.417632" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.227014" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${COUNT}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -197,26 +197,26 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.397340" elapsed="0.020500"/>
+<status status="PASS" start="2024-12-17T23:07:46.207505" elapsed="0.019606"/>
 </kw>
 <arg>${CART_COUNT_VISIBLE}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.396894" elapsed="0.021124"/>
+<status status="PASS" start="2024-12-17T23:07:46.207134" elapsed="0.020084"/>
 </kw>
 <kw name="ProductsPage.WaitAndClick" owner="ProductsPage">
 <kw name="Click" owner="Browser">
-<msg time="2024-12-17T22:42:45.419421" level="INFO">Clicks the element 'css=a.shopping_cart_link'.</msg>
+<msg time="2024-12-17T23:07:46.228254" level="INFO">Clicks the element 'css=a.shopping_cart_link'.</msg>
 <arg>${LOCATOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.418891" elapsed="0.037110"/>
+<status status="PASS" start="2024-12-17T23:07:46.227859" elapsed="0.034541"/>
 </kw>
 <arg>${SHOPPING_CART_LINK}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.418440" elapsed="0.037730"/>
+<status status="PASS" start="2024-12-17T23:07:46.227506" elapsed="0.035025"/>
 </kw>
 <kw name="YourCartPage.HeaderVisible" owner="YourCartPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.475144" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.278148" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${HEADER}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -224,10 +224,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.457109" elapsed="0.018154"/>
+<status status="PASS" start="2024-12-17T23:07:46.263864" elapsed="0.014381"/>
 </kw>
 <arg>${YOUR_CART_PAGE_TITLE}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.456603" elapsed="0.018792"/>
+<status status="PASS" start="2024-12-17T23:07:46.263192" elapsed="0.015157"/>
 </kw>
 <kw name="YourCartPage.GetUrl" owner="YourCartPage">
 <kw name="Get Url" owner="Browser">
@@ -237,14 +237,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.476129" elapsed="0.002118"/>
+<status status="PASS" start="2024-12-17T23:07:46.278937" elapsed="0.001993"/>
 </kw>
 <arg>${TEST_DATA_YOUR_CART_PAGE_URL}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.475695" elapsed="0.002718"/>
+<status status="PASS" start="2024-12-17T23:07:46.278597" elapsed="0.002442"/>
 </kw>
 <kw name=" YourCartPage.InventoryItemNameVisible" owner="YourCartPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.497120" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.295346" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${INVENTORY_ITEM}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -252,14 +252,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.479130" elapsed="0.018243"/>
+<status status="PASS" start="2024-12-17T23:07:46.281608" elapsed="0.013835"/>
 </kw>
 <arg>${INVENTORY_ITEM_NAME}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.478715" elapsed="0.018844"/>
+<status status="PASS" start="2024-12-17T23:07:46.281275" elapsed="0.014276"/>
 </kw>
 <kw name="YourCartPage.CheckoutButtonEnabled" owner="YourCartPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.515269" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.308266" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${LOCATOR}</arg>
 <arg>validate</arg>
 <arg>value | enabled</arg>
@@ -267,26 +267,26 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.498326" elapsed="0.017058"/>
+<status status="PASS" start="2024-12-17T23:07:46.296210" elapsed="0.012153"/>
 </kw>
 <arg>${CHECKOUT_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.497887" elapsed="0.017637"/>
+<status status="PASS" start="2024-12-17T23:07:46.295848" elapsed="0.012617"/>
 </kw>
 <kw name="YourCartPage.ClickCheckoutButton" owner="YourCartPage">
 <kw name="Click" owner="Browser">
-<msg time="2024-12-17T22:42:45.516712" level="INFO">Clicks the element 'data-test=checkout'.</msg>
+<msg time="2024-12-17T23:07:46.309442" level="INFO">Clicks the element 'data-test=checkout'.</msg>
 <arg>${LOCATOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.516222" elapsed="0.036571"/>
+<status status="PASS" start="2024-12-17T23:07:46.309048" elapsed="0.037466"/>
 </kw>
 <arg>${CHECKOUT_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.515817" elapsed="0.037126"/>
+<status status="PASS" start="2024-12-17T23:07:46.308711" elapsed="0.038028"/>
 </kw>
 <kw name="CheckoutYourInformationPage.HeaderVisible" owner="CheckoutYourInformationPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.573046" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.363918" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${HEADER}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -294,10 +294,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.554099" elapsed="0.019070"/>
+<status status="PASS" start="2024-12-17T23:07:46.347685" elapsed="0.016374"/>
 </kw>
 <arg>${CHECKOUT_YOUR_INFORMATION_PAGE_TITLE}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.553488" elapsed="0.019885"/>
+<status status="PASS" start="2024-12-17T23:07:46.347122" elapsed="0.017045"/>
 </kw>
 <kw name="CheckoutYourInformationPage.GetUrl" owner="CheckoutYourInformationPage">
 <kw name="Get Url" owner="Browser">
@@ -307,56 +307,56 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.574440" elapsed="0.002393"/>
+<status status="PASS" start="2024-12-17T23:07:46.365030" elapsed="0.002123"/>
 </kw>
 <arg>${TEST_DATA_CHECKOUT_YOUR_INFORMATION_PAGE_URL}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.573836" elapsed="0.003118"/>
+<status status="PASS" start="2024-12-17T23:07:46.364416" elapsed="0.002845"/>
 </kw>
 <kw name="CheckoutYourInformationPage.TypeText" owner="CheckoutYourInformationPage">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-12-17T22:42:45.578297" level="INFO">Fills the text 'TEST123' in the given field.</msg>
+<msg time="2024-12-17T23:07:46.368304" level="INFO">Fills the text 'TEST123' in the given field.</msg>
 <arg>${LOCATOR}</arg>
 <arg>${TEST_DATA}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.577691" elapsed="0.012815"/>
+<status status="PASS" start="2024-12-17T23:07:46.367881" elapsed="0.013387"/>
 </kw>
 <arg>${FIRST_NAME}</arg>
 <arg>${TEST_DATA_FIRSTNAME}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.577263" elapsed="0.013465"/>
+<status status="PASS" start="2024-12-17T23:07:46.367516" elapsed="0.013969"/>
 </kw>
 <kw name="CheckoutYourInformationPage.TypeText" owner="CheckoutYourInformationPage">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-12-17T22:42:45.593310" level="INFO">Fills the text 'TEST123' in the given field.</msg>
+<msg time="2024-12-17T23:07:46.383761" level="INFO">Fills the text 'TEST123' in the given field.</msg>
 <arg>${LOCATOR}</arg>
 <arg>${TEST_DATA}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.592503" elapsed="0.013508"/>
+<status status="PASS" start="2024-12-17T23:07:46.383120" elapsed="0.009758"/>
 </kw>
 <arg>${LAST_NAME}</arg>
 <arg>${TEST_DATA_LASTNAME}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.591520" elapsed="0.014699"/>
+<status status="PASS" start="2024-12-17T23:07:46.382124" elapsed="0.010870"/>
 </kw>
 <kw name="CheckoutYourInformationPage.TypeText" owner="CheckoutYourInformationPage">
 <kw name="Fill Text" owner="Browser">
-<msg time="2024-12-17T22:42:45.608669" level="INFO">Fills the text '00989' in the given field.</msg>
+<msg time="2024-12-17T23:07:46.394314" level="INFO">Fills the text '00989' in the given field.</msg>
 <arg>${LOCATOR}</arg>
 <arg>${TEST_DATA}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.607292" elapsed="0.019070"/>
+<status status="PASS" start="2024-12-17T23:07:46.393700" elapsed="0.017403"/>
 </kw>
 <arg>${POSTAL_CODE}</arg>
 <arg>${TEST_DATA_POSTAL_CODE}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.606696" elapsed="0.020009"/>
+<status status="PASS" start="2024-12-17T23:07:46.393268" elapsed="0.017955"/>
 </kw>
 <kw name="CheckoutYourInformationPage.ContinueButtoNEnabled" owner="CheckoutYourInformationPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.651182" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.435144" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${LOCATOR}</arg>
 <arg>validate</arg>
 <arg>value | enabled</arg>
@@ -364,26 +364,26 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.627941" elapsed="0.023363"/>
+<status status="PASS" start="2024-12-17T23:07:46.412823" elapsed="0.022484"/>
 </kw>
 <arg>${CONTINUE_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.627365" elapsed="0.024076"/>
+<status status="PASS" start="2024-12-17T23:07:46.411731" elapsed="0.023756"/>
 </kw>
 <kw name="CheckoutYourInformationPage.ClickContinueButton" owner="CheckoutYourInformationPage">
 <kw name="Click" owner="Browser">
-<msg time="2024-12-17T22:42:45.653075" level="INFO">Clicks the element 'data-test=continue'.</msg>
+<msg time="2024-12-17T23:07:46.436848" level="INFO">Clicks the element 'data-test=continue'.</msg>
 <arg>${LOCATOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.652299" elapsed="0.043778"/>
+<status status="PASS" start="2024-12-17T23:07:46.436316" elapsed="0.047622"/>
 </kw>
 <arg>${CONTINUE_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.651847" elapsed="0.044451"/>
+<status status="PASS" start="2024-12-17T23:07:46.435820" elapsed="0.048324"/>
 </kw>
 <kw name="ChekoutOverviewPage.HeaderVisible" owner="ChekoutOverviewPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.727007" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.511226" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${HEADER}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -391,10 +391,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.697847" elapsed="0.029291"/>
+<status status="PASS" start="2024-12-17T23:07:46.485542" elapsed="0.025793"/>
 </kw>
 <arg>${CHECKOUT_OVERVIEW_PAGE_TITLE}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.696776" elapsed="0.030496"/>
+<status status="PASS" start="2024-12-17T23:07:46.484633" elapsed="0.026815"/>
 </kw>
 <kw name="ChekoutOverviewPage.GetUrl" owner="ChekoutOverviewPage">
 <kw name="Get Url" owner="Browser">
@@ -404,14 +404,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.728395" elapsed="0.003017"/>
+<status status="PASS" start="2024-12-17T23:07:46.512195" elapsed="0.003041"/>
 </kw>
 <arg>${CHECKOUT_OVERVIEW_PAGE_URL}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.727659" elapsed="0.003922"/>
+<status status="PASS" start="2024-12-17T23:07:46.511806" elapsed="0.003876"/>
 </kw>
 <kw name=" ChekoutOverviewPage.InventoryItemNameVisible" owner="ChekoutOverviewPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.758868" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.544507" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${INVENTORY_ITEM}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -419,14 +419,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.732452" elapsed="0.026539"/>
+<status status="PASS" start="2024-12-17T23:07:46.516631" elapsed="0.027974"/>
 </kw>
 <arg>${CHECKOUT_OVERVIEW_PAGE_INVENTORY_ITEM_NAME}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.731984" elapsed="0.027252"/>
+<status status="PASS" start="2024-12-17T23:07:46.516265" elapsed="0.028445"/>
 </kw>
 <kw name="ChekoutOverviewPage.FinishButtonEnabled" owner="ChekoutOverviewPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.778865" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.558430" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${LOCATOR}</arg>
 <arg>validate</arg>
 <arg>value | enabled</arg>
@@ -434,26 +434,26 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.760863" elapsed="0.018125"/>
+<status status="PASS" start="2024-12-17T23:07:46.545460" elapsed="0.013066"/>
 </kw>
 <arg>${FINISH_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.759867" elapsed="0.019262"/>
+<status status="PASS" start="2024-12-17T23:07:46.545009" elapsed="0.013623"/>
 </kw>
 <kw name="ChekoutOverviewPage.ClickFinishButton" owner="ChekoutOverviewPage">
 <kw name="Click" owner="Browser">
-<msg time="2024-12-17T22:42:45.780876" level="INFO">Clicks the element 'data-test=finish'.</msg>
+<msg time="2024-12-17T23:07:46.559602" level="INFO">Clicks the element 'data-test=finish'.</msg>
 <arg>${LOCATOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.780134" elapsed="0.025558"/>
+<status status="PASS" start="2024-12-17T23:07:46.559214" elapsed="0.036852"/>
 </kw>
 <arg>${FINISH_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.779588" elapsed="0.026450"/>
+<status status="PASS" start="2024-12-17T23:07:46.558879" elapsed="0.037412"/>
 </kw>
 <kw name="CheckoutCompletePage.HeaderVisible" owner="CheckoutCompletePage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.824984" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.610228" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${HEADER}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -461,10 +461,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.806886" elapsed="0.018224"/>
+<status status="PASS" start="2024-12-17T23:07:46.597212" elapsed="0.013112"/>
 </kw>
 <arg>${CHECKOUT_COMPLETE_PAGE_TITLE}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.806414" elapsed="0.018874"/>
+<status status="PASS" start="2024-12-17T23:07:46.596821" elapsed="0.013608"/>
 </kw>
 <kw name="CheckoutCompletePage.GetUrl" owner="CheckoutCompletePage">
 <kw name="Get Url" owner="Browser">
@@ -474,14 +474,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.826192" elapsed="0.002275"/>
+<status status="PASS" start="2024-12-17T23:07:46.611009" elapsed="0.001789"/>
 </kw>
 <arg>${CHECKOUT_COMPLETE_PAGE_URL}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.825748" elapsed="0.002844"/>
+<status status="PASS" start="2024-12-17T23:07:46.610666" elapsed="0.002240"/>
 </kw>
 <kw name=" CheckoutCompletePage.HeaderAndMessagetextVisible" owner="CheckoutCompletePage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.846749" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.626453" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${HEADER}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -489,10 +489,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.829354" elapsed="0.017520"/>
+<status status="PASS" start="2024-12-17T23:07:46.613515" elapsed="0.013034"/>
 </kw>
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.864085" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.638927" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${TEXT}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -500,15 +500,15 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.847149" elapsed="0.017055"/>
+<status status="PASS" start="2024-12-17T23:07:46.626732" elapsed="0.012289"/>
 </kw>
 <arg>${CHECKOUT_COMPLETE_PAGE_THANK_YOU_HEADER}</arg>
 <arg>${COMPLETE_TEXT_MESSAGE}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.828899" elapsed="0.035438"/>
+<status status="PASS" start="2024-12-17T23:07:46.613142" elapsed="0.025984"/>
 </kw>
 <kw name="CheckoutCompletePage.PonyImagevisible" owner="CheckoutCompletePage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.882832" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.652821" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${LOCATOR}</arg>
 <arg>validate</arg>
 <arg>value | enabled</arg>
@@ -516,14 +516,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.865085" elapsed="0.017869"/>
+<status status="PASS" start="2024-12-17T23:07:46.639720" elapsed="0.013198"/>
 </kw>
 <arg>${PONY_EXPRESS_IMAGE}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.864646" elapsed="0.018443"/>
+<status status="PASS" start="2024-12-17T23:07:46.639373" elapsed="0.013671"/>
 </kw>
 <kw name="CheckoutCompletePage.BackHomeButtoNEnabled" owner="CheckoutCompletePage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.900320" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.665258" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${LOCATOR}</arg>
 <arg>validate</arg>
 <arg>value | enabled</arg>
@@ -531,26 +531,26 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.883837" elapsed="0.016606"/>
+<status status="PASS" start="2024-12-17T23:07:46.653655" elapsed="0.011722"/>
 </kw>
 <arg>${BACK_HOME_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.883397" elapsed="0.017258"/>
+<status status="PASS" start="2024-12-17T23:07:46.653313" elapsed="0.012346"/>
 </kw>
 <kw name="CheckoutCompletePage.ClickBackHomeButton" owner="CheckoutCompletePage">
 <kw name="Click" owner="Browser">
-<msg time="2024-12-17T22:42:45.901933" level="INFO">Clicks the element 'data-test=back-to-products'.</msg>
+<msg time="2024-12-17T23:07:46.666710" level="INFO">Clicks the element 'data-test=back-to-products'.</msg>
 <arg>${LOCATOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.901412" elapsed="0.040530"/>
+<status status="PASS" start="2024-12-17T23:07:46.666313" elapsed="0.030845"/>
 </kw>
 <arg>${BACK_HOME_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.900973" elapsed="0.041110"/>
+<status status="PASS" start="2024-12-17T23:07:46.665966" elapsed="0.031430"/>
 </kw>
 <kw name="ProductsPage.TitleVisible" owner="ProductsPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:45.966613" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<msg time="2024-12-17T23:07:46.716370" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
 <arg>${LOGO}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -558,10 +558,10 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.943057" elapsed="0.023685"/>
+<status status="PASS" start="2024-12-17T23:07:46.698199" elapsed="0.018265"/>
 </kw>
 <arg>${PRODUCTS_PAGE_TITLE}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.942489" elapsed="0.024424"/>
+<status status="PASS" start="2024-12-17T23:07:46.697794" elapsed="0.018775"/>
 </kw>
 <kw name="ProductsPage.GetUrl" owner="ProductsPage">
 <kw name="Get Url" owner="Browser">
@@ -571,34 +571,34 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.967689" elapsed="0.002566"/>
+<status status="PASS" start="2024-12-17T23:07:46.717146" elapsed="0.001708"/>
 </kw>
 <arg>${TEST_DATA_PRODUCTS_PAGE_URL}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.967247" elapsed="0.003149"/>
+<status status="PASS" start="2024-12-17T23:07:46.716809" elapsed="0.002137"/>
 </kw>
 <kw name="ProductsPage.WaitAndClick" owner="ProductsPage">
 <kw name="Click" owner="Browser">
-<msg time="2024-12-17T22:42:45.971999" level="INFO">Clicks the element 'css=#react-burger-menu-btn'.</msg>
+<msg time="2024-12-17T23:07:46.719917" level="INFO">Clicks the element 'css=#react-burger-menu-btn'.</msg>
 <arg>${LOCATOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.971352" elapsed="0.024430"/>
+<status status="PASS" start="2024-12-17T23:07:46.719455" elapsed="0.033929"/>
 </kw>
 <arg>${BURGER_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.970802" elapsed="0.025131"/>
+<status status="PASS" start="2024-12-17T23:07:46.719149" elapsed="0.034361"/>
 </kw>
 <kw name="ProductsPage.WaitAndClick" owner="ProductsPage">
 <kw name="Click" owner="Browser">
-<msg time="2024-12-17T22:42:45.997637" level="INFO">Clicks the element 'css=#logout_sidebar_link'.</msg>
+<msg time="2024-12-17T23:07:46.754758" level="INFO">Clicks the element 'css=#logout_sidebar_link'.</msg>
 <arg>${LOCATOR}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:45.996845" elapsed="0.863302"/>
+<status status="PASS" start="2024-12-17T23:07:46.754225" elapsed="0.858243"/>
 </kw>
 <arg>${LOGOUT_BUTTON}</arg>
-<status status="PASS" start="2024-12-17T22:42:45.996252" elapsed="0.864053"/>
+<status status="PASS" start="2024-12-17T23:07:46.753855" elapsed="0.858800"/>
 </kw>
 <kw name="LoginPage.GetUrl" owner="LoginPage">
 <kw name="Get Url" owner="Browser">
@@ -608,14 +608,14 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2024-12-17T22:42:46.861302" elapsed="0.002731"/>
+<status status="PASS" start="2024-12-17T23:07:47.613451" elapsed="0.002535"/>
 </kw>
 <arg>${BASE_URL}</arg>
-<status status="PASS" start="2024-12-17T22:42:46.860818" elapsed="0.003358"/>
+<status status="PASS" start="2024-12-17T23:07:47.612991" elapsed="0.003110"/>
 </kw>
 <kw name="LoginPage.ElementVisible" owner="LoginPage">
 <kw name="Get Element States" owner="Browser">
-<msg time="2024-12-17T22:42:47.118056" level="INFO">States are: ['detached']</msg>
+<msg time="2024-12-17T23:07:47.869110" level="INFO">States are: ['detached']</msg>
 <arg>${LOCATOR}</arg>
 <arg>validate</arg>
 <arg>value | visible</arg>
@@ -623,15 +623,15 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2024-12-17T22:42:46.865051" elapsed="0.253102"/>
+<status status="PASS" start="2024-12-17T23:07:47.616808" elapsed="0.252403"/>
 </kw>
 <arg>${BOT_IMAGE}</arg>
-<status status="PASS" start="2024-12-17T22:42:46.864520" elapsed="0.253739"/>
+<status status="PASS" start="2024-12-17T23:07:47.616464" elapsed="0.252855"/>
 </kw>
-<status status="PASS" start="2024-12-17T22:42:40.329870" elapsed="6.788592"/>
+<status status="PASS" start="2024-12-17T23:07:39.966864" elapsed="7.902675"/>
 </test>
 <doc>User completes the checkout workflow on the Saucedemo app</doc>
-<status status="PASS" start="2024-12-17T22:42:40.045516" elapsed="7.148773"/>
+<status status="PASS" start="2024-12-17T23:07:39.650503" elapsed="8.278719"/>
 </suite>
 <statistics>
 <total>
@@ -644,6 +644,6 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2024-12-17T22:42:43.546996" level="WARN">Keyword 'Browser.Wait Until Network Is Idle' is deprecated. Use `Wait For Load State` instead. rfbrowser transform --wait-until-network-is-idle path/to/test command automatically transforms keyword to new format.</msg>
+<msg time="2024-12-17T23:07:44.359688" level="WARN">Keyword 'Browser.Wait Until Network Is Idle' is deprecated. Use `Wait For Load State` instead. rfbrowser transform --wait-until-network-is-idle path/to/test command automatically transforms keyword to new format.</msg>
 </errors>
 </robot>
