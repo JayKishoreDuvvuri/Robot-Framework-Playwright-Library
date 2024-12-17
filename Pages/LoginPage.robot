@@ -1,13 +1,12 @@
 *** Settings ***
 Documentation       Login Page Functionality
 
-Library             Browser
-Resource            ../Data/TestData.robot
-
+Library            Browser
+Resource           ../Data/TestData.robot
 
 *** Keywords ***
 LoginPage.OpenApp
-    New Browser    webkit    headless=false
+    New Browser    webkit    headless=False
     New Page    ${BASE_URL}
 
 LoginPage.GetUrl

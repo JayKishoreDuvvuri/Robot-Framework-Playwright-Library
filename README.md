@@ -2,6 +2,11 @@
 
 An example project demonstrating automation of Robot Framework test using playwright library with page object design pattern framework.
 
+#### Reference
+```bash
+https://robotframework-browser.org/
+```
+
 #### Application Under Test
 
 We are using https://www.saucedemo.com/ as the Application Under Test. This App is a **React.js** Frontend
